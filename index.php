@@ -22,25 +22,27 @@ get_header(); ?>
        * Setup query to show the website post type with all posts.
        */
 
-      $args = array(
-          'post_type' => 'website',
-          'post_status' => 'publish',
-          'posts_per_page' => -1,
-          'order' => 'DESC',
-      );
+      $args = [
+          "post_type" => "website",
+          "post_status" => "publish",
+          "posts_per_page" => -1,
+          "order" => "DESC",
+      ];
 
-      $loop = new WP_Query( $args );
+      $loop = new WP_Query($args);
 
-      while ( $loop->have_posts() ) : $loop->the_post();?>
+      while ($loop->have_posts()):
+          $loop->the_post(); ?>
           <article class="inspoCard">
-            <a href="<?php the_field('url');?>?ref=inspo.wannad.it" target="_blank">
+            <a href="<?php the_field(
+                "url"
+            ); ?>?ref=inspo.wannad.it" target="_blank">
               <div class="Preview">
                 <div class="Bar">
 
                 </div>
                 <div class="Thumb">
-                  <?php the_post_thumbnail('medium'); ?>
-
+                  <?php the_post_thumbnail("medium"); ?>
                   <div class="Overlay">
                     Visit↗
                   </div>
@@ -48,25 +50,32 @@ get_header(); ?>
               </div>
             </a>
 
-            <a href="<?php the_permalink()?>">
+            <a href="<?php the_permalink(); ?>">
 
               <div class="Data">
                 <div class="Title">
-                  <?php the_title();?>
+                  <?php the_title(); ?>
                 </div>
                 <div class="Time">
-                  <?php echo esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ) . ' ago'; ?>
+                  <?php echo esc_html(
+                      human_time_diff(
+                          get_the_time("U"),
+                          current_time("timestamp")
+                      )
+                  ) . " ago"; ?>
                 </div>
               </div>
 
             </a>
 
           </article>
-      <?php endwhile;
-        wp_reset_postdata();
+      <?php
+      endwhile;
+      wp_reset_postdata();
       ?>
 
     </div>
   </section>
 
-<?php get_footer(); ?>
+<?php get_footer();
+?>

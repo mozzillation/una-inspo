@@ -1,3 +1,388 @@
 @import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Inter:wght@400;700&display=swap");
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:0.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}body,html{box-sizing:border-box;background-color:#f7e7e2;color:#111111;height:auto}*{box-sizing:border-box}a{color:inherit;transition:opacity 0.5s cubic-bezier(0.86,0,0.07,1) 0s;-webkit-transition:opacity 0.5s cubic-bezier(0.86,0,0.07,1) 0s;-moz-transition:opacity 0.5s cubic-bezier(0.86,0,0.07,1) 0s;-o-transition:opacity 0.5s cubic-bezier(0.86,0,0.07,1) 0s;-ms-transition:opacity 0.5s cubic-bezier(0.86,0,0.07,1) 0s}a:active,a:hover{opacity:0.6}body,html{font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif;font-size:18px;letter-spacing:0.015em;word-spacing:0.001em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.Header{margin:auto}.Header .Top a{text-decoration:none}.Header .Inner{display:flex;align-items:flex-start;align-content:flex-start;justify-content:flex-start;flex-direction:column;padding:32px 0}.Header .Logo{font-size:3.5em;text-transform:uppercase;font-weight:bold;font-family:"BioRhyme Expanded",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",serif}.Header .Description{padding:16px 0}.Header .Navigation{padding:16px 0;border-top:1px solid #111111;border-bottom:1px solid #111111}.Header .Navigation ul{margin:0;padding:0;display:flex;align-items:flex-start;align-content:flex-start;justify-content:flex-start}.Header .Navigation ul li{list-style:none;margin-right:16px}.Header .Navigation ul li.current_page_item a{color:#fe6100}.Header .Navigation ul li a{text-decoration:none}.Footer{background-color:#111111;color:#f7e7e2}.Footer .Inner{padding:32px 0}.Footer .Grid{grid-template-columns:repeat(2,minmax(0,1fr))}@media screen and (max-width:500px){.Footer .Grid{grid-template-columns:repeat(1,minmax(0,1fr))}}.Main{padding-top:32px!important;padding-bottom:32px!important}.Container,.Main{max-width:1080px;position:relative;margin:auto;padding:0 24px}.inspoCard{width:100%;height:auto;position:relative}.inspoCard a{text-decoration:none}.inspoCard .Preview{box-shadow:0px 0px 8px -4px #fc835c}.inspoCard .Preview:active .Overlay,.inspoCard .Preview:hover .Overlay{opacity:1}.inspoCard .Bar{height:12px;background-color:#111111;border-radius:4px 4px 0px 0px}.inspoCard .Thumb{border-radius:0px 0px 4px 4px;overflow:hidden;position:relative}.inspoCard .Thumb img{width:100%;height:auto;display:block}.inspoCard .Overlay{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;align-content:center;justify-content:center;color:#fe6100;background-color:#111111;font-size:2em;opacity:0;transition:opacity 0.5s cubic-bezier(0.86,0,0.07,1) 0s,color 0.5s cubic-bezier(0.86,0,0.07,1) 0s;-webkit-transition:opacity 0.5s cubic-bezier(0.86,0,0.07,1) 0s,color 0.5s cubic-bezier(0.86,0,0.07,1) 0s;-moz-transition:opacity 0.5s cubic-bezier(0.86,0,0.07,1) 0s,color 0.5s cubic-bezier(0.86,0,0.07,1) 0s;-o-transition:opacity 0.5s cubic-bezier(0.86,0,0.07,1) 0s,color 0.5s cubic-bezier(0.86,0,0.07,1) 0s;-ms-transition:opacity 0.5s cubic-bezier(0.86,0,0.07,1) 0s,color 0.5s cubic-bezier(0.86,0,0.07,1) 0s}.inspoCard .Data{padding:0;line-height:1.4em;padding:8px 0;transition:opacity 0.5s cubic-bezier(0.86,0,0.07,1) 0s;-webkit-transition:opacity 0.5s cubic-bezier(0.86,0,0.07,1) 0s;-moz-transition:opacity 0.5s cubic-bezier(0.86,0,0.07,1) 0s;-o-transition:opacity 0.5s cubic-bezier(0.86,0,0.07,1) 0s;-ms-transition:opacity 0.5s cubic-bezier(0.86,0,0.07,1) 0s}.inspoCard .Data:active,.inspoCard .Data:hover{opacity:0.6}.inspoCard .Data .Time{color:rgba(17,17,17,0.4)}.Grid{display:grid;grid-gap:32px;grid-template-columns:repeat(3,minmax(0,1fr))}@media screen and (max-width:768px){.Grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media screen and (max-width:500px){.Grid{grid-template-columns:repeat(1,minmax(0,1fr))}}.SingleInspiration .Data{padding:32px 0;font-size:2em}.SingleInspiration .Data .Time,.SingleInspiration .Data .Title,.SingleInspiration .Data .Url{padding:8px 0;border-bottom:1px solid #111111}.SingleInspiration .Data .Time{color:rgba(17,17,17,0.4)}.SingleInspiration .Data .Url a{text-decoration:none;color:#fe6100}@media screen and (max-width:500px){.SingleInspiration .Data{font-size:1.5em}}.SingleInspiration .Preview{box-shadow:0px 0px 8px -4px #fc835c}.SingleInspiration .Preview:active .Overlay,.SingleInspiration .Preview:hover .Overlay{opacity:1}.SingleInspiration .Bar{height:12px;background-color:#111111;border-radius:4px 4px 0px 0px}.SingleInspiration .Thumb{border-radius:0px 0px 4px 4px;overflow:hidden;position:relative}.SingleInspiration .Thumb img{width:100%;height:auto;display:block}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+main {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+img {
+  border-style: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+progress {
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+details {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+template {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+body,
+html {
+  box-sizing: border-box;
+  background-color: #f7e7e2;
+  color: #111111;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+  -webkit-transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+  -moz-transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+  -o-transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+  -ms-transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+}
+a:active,
+a:hover {
+  opacity: 0.6;
+}
+body,
+html {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.015em;
+  word-spacing: 0.001em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.Header {
+  margin: auto;
+}
+.Header .Top a {
+  text-decoration: none;
+}
+.Header .Inner {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 32px 0;
+}
+.Header .Logo {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "BioRhyme Expanded", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", serif;
+}
+.Header .Description {
+  padding: 16px 0;
+}
+.Header .Navigation {
+  padding: 16px 0;
+  border-top: 1px solid #111111;
+  border-bottom: 1px solid #111111;
+}
+.Header .Navigation ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+.Header .Navigation ul li {
+  list-style: none;
+  margin-right: 16px;
+}
+.Header .Navigation ul li.current_page_item a {
+  color: #fe6100;
+}
+.Header .Navigation ul li a {
+  text-decoration: none;
+}
+.Footer {
+  background-color: #111111;
+  color: #f7e7e2;
+}
+.Footer .Inner {
+  padding: 32px 0;
+}
+.Footer .Grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media screen and (max-width: 500px) {
+  .Footer .Grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+.Main {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+.Container,
+.Main {
+  max-width: 1080px;
+  position: relative;
+  margin: auto;
+  padding: 0 24px;
+}
+.inspoCard {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.inspoCard a {
+  text-decoration: none;
+}
+.inspoCard .Preview {
+  box-shadow: 0px 0px 8px -4px #fc835c;
+}
+.inspoCard .Preview:active .Overlay,
+.inspoCard .Preview:hover .Overlay {
+  opacity: 1;
+}
+.inspoCard .Bar {
+  height: 12px;
+  background-color: #111111;
+  border-radius: 4px 4px 0px 0px;
+}
+.inspoCard .Thumb {
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+  position: relative;
+}
+.inspoCard .Thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.inspoCard .Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: #fe6100;
+  background-color: #111111;
+  font-size: 2em;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s,
+    color 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+  -webkit-transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s,
+    color 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+  -moz-transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s,
+    color 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+  -o-transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s,
+    color 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+  -ms-transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s,
+    color 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+}
+.inspoCard .Data {
+  padding: 0;
+  line-height: 1.4em;
+  padding: 8px 0;
+  transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+  -webkit-transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+  -moz-transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+  -o-transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+  -ms-transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+}
+.inspoCard .Data:active,
+.inspoCard .Data:hover {
+  opacity: 0.6;
+}
+.inspoCard .Data .Time {
+  color: rgba(17, 17, 17, 0.4);
+}
+.Grid {
+  display: grid;
+  grid-gap: 32px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media screen and (max-width: 768px) {
+  .Grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 500px) {
+  .Grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+.SingleInspiration .Data {
+  padding: 32px 0;
+  font-size: 2em;
+}
+.SingleInspiration .Data .Time,
+.SingleInspiration .Data .Title,
+.SingleInspiration .Data .Url {
+  padding: 8px 0;
+  border-bottom: 1px solid #111111;
+}
+.SingleInspiration .Data .Time {
+  color: rgba(17, 17, 17, 0.4);
+}
+.SingleInspiration .Data .Url a {
+  text-decoration: none;
+  color: #fe6100;
+}
+@media screen and (max-width: 500px) {
+  .SingleInspiration .Data {
+    font-size: 1.5em;
+  }
+}
+.SingleInspiration .Preview {
+  box-shadow: 0px 0px 8px -4px #fc835c;
+}
+.SingleInspiration .Preview:active .Overlay,
+.SingleInspiration .Preview:hover .Overlay {
+  opacity: 1;
+}
+.SingleInspiration .Bar {
+  height: 12px;
+  background-color: #111111;
+  border-radius: 4px 4px 0px 0px;
+}
+.SingleInspiration .Thumb {
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+  position: relative;
+}
+.SingleInspiration .Thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

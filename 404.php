@@ -11,4 +11,5 @@ get_header(); ?>
 
 	<p>Nope.</p>
 
-<?php get_footer(); ?>
+<?php get_footer();
+?>

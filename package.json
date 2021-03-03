@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "precommit": "prettier . --write"
+  },
+  "pre-commit": [
+    "precommit"
+  ],
+  "dependencies": {
+    "precommit": "^1.2.2"
+  }
+}

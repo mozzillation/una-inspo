@@ -9,7 +9,9 @@
  */
 get_header(); ?>
 
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<?php if (have_posts()):
+     while (have_posts()):
+         the_post(); ?>
 
 		<section class="SingleInspiration">
 
@@ -18,30 +20,35 @@ get_header(); ?>
 
 					</div>
 					<div class="Thumb">
-						<?php the_post_thumbnail('large'); ?>
+						<?php the_post_thumbnail("large"); ?>
 					</div>
 				</div>
 
 				<div class="Data">
 					<div class="Title">
-						<?php the_title();?>
+						<?php the_title(); ?>
 					</div>
 					<div class="Url">
-						<a href="<?php the_field('url');?>?ref=inspo.wannad.it" target="_blank">
-							<?php the_field('url');?> ↗
+						<a href="<?php the_field("url"); ?>?ref=inspo.wannad.it" target="_blank">
+							<?php the_field("url"); ?> ↗
 						</a>
 					</div>
 					<div class="Time">
-						<?php echo esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ) . ' ago'; ?>
+						<?php echo esc_html(
+          human_time_diff(get_the_time("U"), current_time("timestamp"))
+      ) . " ago"; ?>
 					</div>
 				</div>
 
 
-				<?php the_content();?>
+				<?php the_content(); ?>
 
 		</section>
 
-	<?php endwhile; ?>
-	<?php endif; ?>
+	<?php
+     endwhile; ?>
+	<?php
+ endif; ?>
 
-<?php get_footer(); ?>
+<?php get_footer();
+?>

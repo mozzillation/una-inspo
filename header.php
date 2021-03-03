@@ -15,7 +15,7 @@
 
 <head>
 
-	<meta charset="<?php bloginfo('charset'); ?>" />
+	<meta charset="<?php bloginfo("charset"); ?>" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 	<!-- Responsive stylesheet -->
@@ -32,15 +32,15 @@
 			<div class="Top">
 				<div class="Inner">
 					<div class="Logo">
-						<a href="<?php bloginfo('url');?>">
-							<?php bloginfo('name');?>
+						<a href="<?php bloginfo("url"); ?>">
+							<?php bloginfo("name"); ?>
 						</a>
 					</div>
 				</div>
 			</div>
 
 			<nav class="Navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+				<?php wp_nav_menu(["theme_location" => "header-menu"]); ?>
 			</nav>
 
 		</div>
