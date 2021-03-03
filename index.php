@@ -14,7 +14,59 @@
  */
 get_header(); ?>
 
-	<!-- delete this code -->
-	<div class="temp"><div class="intro"><a href="https://onepagelove.com/una">Una</a> is a One Page starter theme for WordPress with no posts, archives, comments or styles.</div><div class="instructions">Either start editing index.php or head over to...<ul><li>Dashboard</li><li>Settings</li><li>Reading</li><li>Front Page Displays</li><li>A Static Page</li><li>Front Page:</li><li>Choose a Page</li></ul>✌</div></div>
+  <section class="Homepage">
+    <div class="Grid">
+
+      <?php
+      /**
+       * Setup query to show the website post type with all posts.
+       */
+
+      $args = array(
+          'post_type' => 'website',
+          'post_status' => 'publish',
+          'posts_per_page' => -1,
+          'order' => 'DESC',
+      );
+
+      $loop = new WP_Query( $args );
+
+      while ( $loop->have_posts() ) : $loop->the_post();?>
+          <article class="inspoCard">
+            <a href="<?php the_field('url');?>?ref=inspo.wannad.it" target="_blank">
+              <div class="Preview">
+                <div class="Bar">
+
+                </div>
+                <div class="Thumb">
+                  <?php the_post_thumbnail('medium'); ?>
+
+                  <div class="Overlay">
+                    Visit↗
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="<?php the_permalink()?>">
+
+              <div class="Data">
+                <div class="Title">
+                  <?php the_title();?>
+                </div>
+                <div class="Time">
+                  <?php echo esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ) . ' ago'; ?>
+                </div>
+              </div>
+
+            </a>
+
+          </article>
+      <?php endwhile;
+        wp_reset_postdata();
+      ?>
+
+    </div>
+  </section>
 
 <?php get_footer(); ?>

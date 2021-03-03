@@ -1,0 +1,12 @@
+.Footer
+  background-color: $black
+  color: $white
+
+  .Inner
+    padding: $margin 0
+
+  .Grid
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+
+    +mq(mobile)
+      grid-template-columns: repeat(1, minmax(0, 1fr))

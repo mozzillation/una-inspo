@@ -1,0 +1,60 @@
+.inspoCard
+  width: 100%
+  height: auto
+  position: relative
+
+  a
+    text-decoration: none
+
+  .Preview
+    box-shadow: 0px 0px 8px -4px $color-300
+
+    +on-event
+      .Overlay
+        opacity: 1
+
+  .Bar
+    height: 12px
+    background-color: $black
+    border-radius: 4px 4px 0px 0px
+
+  .Thumb
+    border-radius: 0px 0px 4px 4px
+    overflow: hidden
+    position: relative
+
+    img
+      width: 100%
+      height: auto
+      display: block
+
+  .Overlay
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: flex
+    align-items: center
+    align-content: center
+    justify-content: center
+    color: $primary
+    background-color: $black
+    font-size: $size-4
+    opacity: 0
+
+    +animate(opacity, color)
+
+  .Data
+    padding: 0
+    line-height: 1.4em
+    padding: $margin-smallest 0
+
+    +animate(opacity)
+
+    +on-event
+      opacity: 0.6
+
+
+    .Time
+      color: transparentize($black, 0.6)

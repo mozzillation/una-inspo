@@ -9,6 +9,23 @@
  */
 ?>
 
+</main>
+
+<footer class="Footer">
+  <div class="Container">
+    <div class="Inner">
+      <div class="Grid">
+        <div class="Column">
+
+        </div>
+        <div class="Column">
+          Designed & Coded with love by Christian & MOZZ
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 <?php wp_footer(); ?>
 
 </body>

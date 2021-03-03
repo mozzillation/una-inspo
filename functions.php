@@ -4,7 +4,7 @@
  * @package una
  * @since una 1.0.5
  * @license GPL 2.0
- * 
+ *
  */
 
 # ------------------------------------------------------------------------
@@ -21,3 +21,21 @@ if ( ! isset( $content_width ) ) $content_width = 640;  # Content Width
 require_once( get_template_directory() . '/backend/functions-clean-up.php'			); 	# WordPress Head Clean-up
 require_once( get_template_directory() . '/backend/functions-indent-head.php'		); 	# Ultra Geeky wp_head indentation
 require_once( get_template_directory() . '/backend/functions-enqueue.php'			); 	# Enqueue Scripts and Styles
+
+# ------------------------------------------------------------------------
+# Additional Functions
+# ------------------------------------------------------------------------
+
+/**
+ *  Adding Navigation Support
+ */
+
+function register_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_menu' );
+
+/**
+ *  Adding Post Thumbnail Support
+ */
+add_theme_support( 'post-thumbnails' );
