@@ -15,6 +15,39 @@
 get_header(); ?>
 
   <section class="Homepage">
+
+    <div class="Filter">
+
+      <div class="Intro">
+        Filter by
+      </div>
+
+      <div class="List">
+
+      <?
+      $terms = get_terms(
+          array(
+              'taxonomy'   => 'website_filter',
+              'hide_empty' => true,
+          )
+      );
+
+      if ( ! empty( $terms ) && is_array( $terms ) ):
+          foreach ( $terms as $term ): ?>
+              <a class="Tag" href="<?php echo esc_url( get_term_link( $term ) ) ?>">
+                  <?php echo $term->name; ?>
+              </a>
+
+              <?php
+              endforeach;
+              endif;
+      ?>
+
+    </div>
+
+  </div>
+
+
     <div class="Grid">
 
       <?php
@@ -39,7 +72,9 @@ get_header(); ?>
             ); ?>?ref=inspo.wannad.it" target="_blank">
               <div class="Preview">
                 <div class="Bar">
-
+                  <div class="Dot Red"></div>
+                  <div class="Dot Yellow"></div>
+                  <div class="Dot Green"></div>
                 </div>
                 <div class="Thumb">
                   <?php the_post_thumbnail("medium"); ?>

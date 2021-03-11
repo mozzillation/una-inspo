@@ -1,0 +1,43 @@
+.toolCard
+  width: 100%
+
+  .Top
+    display: grid
+    grid-gap: $margin-smallest
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+    border-bottom: 1px solid $black
+    padding-bottom: $margin-smallest
+
+    .Title
+
+    .Filters
+      list-style: none
+      color: transparentize($black, 0.6)
+      line-height: 1.4em
+
+    .Thumb
+      width: 100%
+
+      img
+        width: 100%
+        height: auto
+        display: block
+
+  .Bottom
+    display: flex
+    flex-direction: row
+    padding-top: $margin-smallest
+
+    .OS
+      font-size: 24px
+      padding-right: $margin-smaller
+      display: flex
+      flex-direction: row
+
+    .Links
+      display: flex
+      flex-direction: row
+
+      li
+        list-style: none
+        line-height: 24px

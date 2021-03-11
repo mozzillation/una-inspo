@@ -1,0 +1,46 @@
+.Filter
+  padding-bottom: $margin
+  display: flex
+  flex-direction: row
+  align-items: center
+  align-content: center
+  justify-content: flex-start
+  overflow: scroll
+
+  +mq(mobile)
+    margin-left: -$margin-small
+    margin-right: -$margin-small
+    padding: 0 $margin-small
+    margin-bottom: $margin-smaller
+    padding-bottom: $margin-smaller
+
+
+  .List
+    display: flex
+    flex-direction: row
+    align-items: center
+    align-content: center
+    flex-wrap: nowrap
+    justify-content: flex-start
+
+    .Tag
+      background-color: #f9f1ee
+      display: inline-block
+      border-radius: 4px
+      position: relative
+      color: $black
+      line-height: 20px
+      padding: $margin-smallest $margin-smaller
+      font-size: 12px
+      text-decoration: none
+      text-transform: uppercase
+      letter-spacing: 1px
+      margin-right: $margin-smallest
+
+      &.is-active
+        background-color: $primary
+        color: $black
+
+  .Intro
+    margin-right: $margin-smallest
+    white-space: nowrap

@@ -35,6 +35,26 @@ add_action("wp_enqueue_scripts", "una_enqueue_styles");
 
 function una_enqueue_scripts()
 {
+
+    wp_register_script(
+        "custom-jquery",
+        "https://code.jquery.com/jquery-3.6.0.min.js",
+        [],
+        una_theme_version,
+        true
+    );
+    wp_enqueue_script("custom-jquery");
+
+
+    wp_register_script(
+        "phosphor-icons",
+        "https://unpkg.com/phosphor-icons",
+        [],
+        una_theme_version,
+        true
+    );
+    wp_enqueue_script("phosphor-icons");
+
     # Custom Scripts
     wp_register_script(
         "una-custom-code",

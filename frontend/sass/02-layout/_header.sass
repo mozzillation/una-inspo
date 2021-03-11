@@ -7,11 +7,12 @@
 
   .Inner
     display: flex
-    align-items: flex-start
-    align-content: flex-start
-    justify-content: flex-start
-    flex-direction: column
+    align-items: center
+    align-content: center
+    justify-content: space-between
+    flex-direction: row
     padding: $margin 0
+    border-bottom: 1px solid $black
 
   .Logo
     font-size: $size-1
@@ -19,13 +20,19 @@
     font-weight: bold
     font-family: $font-serif
 
+    +mq(mobile)
+      font-size: $size-4
+
   .Description
     padding: $margin-smaller 0
 
   .Navigation
     padding: $margin-smaller 0
-    border-top: 1px solid $black
     border-bottom: 1px solid $black
+
+    +mq(tablet)
+      display: none
+
 
     ul
       margin: 0
@@ -37,11 +44,69 @@
 
       li
         list-style: none
-        margin-right: $margin-smaller
+        margin-right: $margin-small
 
-        &.current_page_item
+        &.current_page_itemm, &.current-menu-item
           a
             color: $primary
 
         a
           text-decoration: none
+
+.HamburgerButton, .CloseButton
+  width: 32px
+  height: 32px
+
+  .ph-list, .ph-x
+    font-size: 32px
+
+.HamburgerButton
+  display: none
+
+  +mq(tablet)
+    display: block
+
+.CloseButton
+  margin-bottom: $margin
+
+.HamburgerMenu
+  width: 100vw
+  height: 100%
+  position: fixed
+  top: 0
+  left: 100vw
+  bottom: 0
+  background-color: $black
+  color: $white
+  z-index: 999
+  padding: $margin-largest 0
+  display: none
+
+  +mq(tablet)
+    display: block
+
+
+  +animate(left)
+
+  &.is-visible
+    left: 0
+
+  .Inner
+    display: flex
+    align-items: flex-end
+    align-content: center
+    justify-content: flex-end
+    flex-direction: column
+    text-align: right
+
+    ul
+      margin: 0
+      padding: 0
+
+    li
+      list-style: none
+      font-size: $size-4
+      margin-bottom: $margin-smaller
+
+      a
+        text-decoration: none

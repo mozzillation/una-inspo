@@ -7,16 +7,36 @@
     text-decoration: none
 
   .Preview
-    box-shadow: 0px 0px 8px -4px $color-300
-
     +on-event
       .Overlay
         opacity: 1
 
   .Bar
-    height: 12px
-    background-color: $black
+    height: 16px
+    background-color: transparentize($black, 0.9)
     border-radius: 4px 4px 0px 0px
+    padding: 5px
+    display: flex
+    align-items: center
+    align-content: center
+    justify-content: flex-start
+    flex-direction: row
+
+    .Dot
+      width: 6px
+      height: 6px
+      border-radius: 3px
+      background-color: $black
+      margin-right: 2px
+
+      &.Green
+        background-color: $green
+
+      &.Red
+        background-color: $red
+
+      &.Yellow
+        background-color: $yellow
 
   .Thumb
     border-radius: 0px 0px 4px 4px

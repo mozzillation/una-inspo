@@ -36,6 +36,10 @@
 							<?php bloginfo("name"); ?>
 						</a>
 					</div>
+
+					<div class="HamburgerButton">
+						<i class="ph-list"></i>
+					</div>
 				</div>
 			</div>
 
@@ -45,6 +49,20 @@
 
 		</div>
 	</header>
+
+
+	<div class="HamburgerMenu">
+		<div class="Container">
+			<div class="Inner">
+
+			<div class="CloseButton">
+					<i class="ph-x"></i>
+			</div>
+
+			<?php wp_nav_menu(["theme_location" => "header-menu"]); ?>
+			</div>
+		</div>
+	</div>
 
 
 	<main class="Main">

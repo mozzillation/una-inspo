@@ -16,10 +16,10 @@
     <div class="Inner">
       <div class="Grid">
         <div class="Column">
-
+          Designed & Coded with love by Christian & MOZZ
         </div>
         <div class="Column">
-          Designed & Coded with love by Christian & MOZZ
+
         </div>
       </div>
     </div>
