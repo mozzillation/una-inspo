@@ -7,5 +7,8 @@
   ],
   "dependencies": {
     "precommit": "^1.2.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
   }
 }

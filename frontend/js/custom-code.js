@@ -4,7 +4,5 @@
 
 
 $('.HamburgerButton, .CloseButton').on('click', () => {
-
   $('.HamburgerMenu').toggleClass('is-visible')
-
 })
